@@ -79,7 +79,7 @@ body {
 }
 
 .about_company {
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(238, 238, 238);
     display: flex;
     justify-content: center;
 }
@@ -105,7 +105,7 @@ body {
 
 .p {
     margin: 10px 0 10px 0;
-    color: black;
+    color: rgb(112, 112, 112);
     font-size: 20px;
     line-height: 1.2em;
 }
@@ -115,6 +115,7 @@ body {
 }
 
 .type_of_training {
+    color: rgb(112, 112, 112);
     font-size: 20px;
     line-height: 1.4em;
 }
