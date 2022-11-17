@@ -1,0 +1,120 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.site_content {
+    width: 100%;
+}
+
+.order_service {
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('intro_private_detective.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.order_service_content {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.order_servise_content_inner {
+    width: 80%;
+    margin: 100px 0 60px 0;
+
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.content_logo {
+    color: white;
+    font-size: 60px;
+}
+
+.description_under_logo {
+    margin-bottom: 15px;
+}
+
+.content_description_under_logo {
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1.2em;
+}
+
+.order_service_out_button {
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.order_service_inner_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(219, 171, 81);
+    border: 3px solid rgb(219, 171, 81);
+    text-decoration: none;
+    height: 40px;
+    width: 180px;
+    transition: transform 0.1s linear, color 0.2s linear, border 0.1s linear;
+}
+
+.order_service_inner_button:hover {
+    color: rgb(219, 171, 81, 0.6);
+    border: 3px solid rgb(219, 171, 81, 0.6);
+}
+
+.order_service_inner_button:active {
+    transform: scale(0.96, 0.96);
+}
+
+.about_company {
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+}
+
+.about_company_content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px 0 60px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.header_inner {
+    color: black;
+    font-size: 50px;
+}
+
+.p {
+    margin: 10px 0 10px 0;
+    color: black;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.types_of_training {
+    margin: 20px 0 20px 0;
+}
+
+.type_of_training {
+    font-size: 20px;
+    line-height: 1.4em;
+}
