@@ -193,7 +193,7 @@ body {
     width: 100%; 
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin: 60px 0 0 0;
 
 }
 
@@ -207,6 +207,8 @@ body {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    padding: 5px 0 5px 0;
+    background-color: rgb(238, 238, 238);
 }
 
 .call_details_column1 {
@@ -214,7 +216,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(238, 238, 238);
 }   
 
 .call_details_column1_inner {
@@ -273,14 +274,24 @@ body {
 
 .call_details_column2 {
     width: 50%;
+    min-height: 600px;
+    background-image: url('nigger_with_phone.jpg');
+    background-size: cover;
+    background-position: 30% 50%;
 }
 
-.nigger_with_phone_img {
+.invisible {
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* .nigger_with_phone_img {
     width: 100%;
     height: 100%;
-}
+    image-orientation: flip;
+} */
 
-@media screen and (max-width: 1250px) {
+@media (max-width: 1250px) {
     .call_details {
         flex-direction: column;
         justify-content: center;
@@ -300,5 +311,114 @@ body {
 
     .call_details_column2 {
         width: 100%;
+    }
+}
+
+.surveillance_options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background-image: url('nigger_in_car2.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.surveillance_options_content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 90%;
+    margin: 30px 0 30px 0;
+}
+
+.surveillance_options::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 1;
+    visibility: hidden;
+}
+
+.surveillance_options_title_bg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+.surveillance_options_title {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.surveillance_options_text_bg {
+    width: 80%;
+}
+
+.surveillance_options_text {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+.surveillance_options_button_bg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.surveillance_options_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(219, 171, 81);
+    border: 3px solid rgb(219, 171, 81);
+    width: 180px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    transition: color 0.2s ease-in-out, border 0.2s ease-in-out, scale 0.06s linear;
+}
+
+.surveillance_options_button:hover {
+    color: rgb(219, 171, 81, 0.6);
+    border: 3px solid rgb(219, 171, 81, 0.6);
+} 
+
+.surveillance_options_button:active {
+    scale: 0.96 0.96;
+}
+
+
+@media (max-width: 900px) {
+    .surveillance_options_content {
+        justify-content: center;
+    }
+
+    .surveillance_options_title_bg {
+        justify-content: center;
+    }
+
+    .surveillance_options_button_bg {
+        justify-content: center;
+    }
+
+    .surveillance_options_text_bg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .surveillance_options::before {
+        visibility: visible;
     }
 }
