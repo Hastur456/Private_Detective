@@ -1,19 +1,18 @@
 body {
+    width: 100%;
+    height: 100%;
     font-family: 'Open Sans', sans-serif;
 }
 
-.site_content {
-    width: 100%;
-}
 
 .order_service {
     min-height: 600px;
-    width: 100%;
     display: flex;
     justify-content: center;
     background-image: url('intro_private_detective.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: top;
+    background-size: cover;
 }
 
 .order_service_content {
@@ -85,17 +84,16 @@ body {
 }
 
 .about_company_content {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0px 0 60px 0;
 }
 
 .header {
     display: flex;
     justify-content: center;
-    margin: 50px 0 50px 0;
+    margin: 60px 0 40px 0;
 }
 
 .header_inner {
@@ -107,7 +105,7 @@ body {
     margin: 0 0 20px 0;
     color: rgb(112, 112, 112);
     font-size: 20px;
-    line-height: 1.2em;
+    line-height: 1.4em;
 }
 
 .types_of_training {
@@ -130,4 +128,146 @@ body {
     border: 2px solid black;
     border-radius: 50%;
     margin: 0 8px 2px 0;
+}
+
+.areas_of_work {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(238, 238, 238);
+}
+
+.areas_of_work_content {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px 0 60px 0;
+}
+
+.areas_of_work_bg_title {
+    margin-bottom: 40px ;
+    display: flex;
+    justify-content: center;
+}
+
+.areas_of_work_title {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 40px;
+}
+
+.areas_of_work_bg_text {
+    display: flex;
+    justify-content: center;
+}
+
+.areas_of_work_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    box-sizing: border-box;
+}
+
+.place_for_text {
+    display: flex;
+    align-items: flex-start;
+    margin: 8px;
+}
+
+.areas_text {
+    color: rgb(112, 112, 112);
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+.services {  
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+
+.services_content {
+    width: 70%;
+    display: block;
+    box-shadow: 2px 2px 8px 4px rgb(95, 95, 95);
+}
+
+.call_details {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.call_details_column1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+}   
+
+.call_details_column1_inner {
+    width: 90%;
+}
+
+.call_details_title_bg {
+    margin-bottom: 10px;
+}
+
+.call_details_title {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    line-height: 1.4em;
+}
+
+.call_details_text_bg {
+    display: block;
+}
+
+.call_details_text {
+    color: rgb(112, 112, 112);
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+.call_details_button_bg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.call_details_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 35px;
+    background-color: rgb(219, 171, 81);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: background-color 0.2s linear, scale 0.08s linear;
+}
+
+.call_details_button:hover {
+    background-color: rgba(146, 95, 0, 0.6);
+}
+
+.call_details_button:active {
+    scale: 0.96 0.96;
+}
+
+.call_details_column2 {
+    width: 50%;
+}
+
+.nigger_detective_img {
+    width: 100%;
+    height: 100%;
 }
