@@ -4,6 +4,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.title {
+    color: black;
+    font-size: 40px;
+}
+
+.text {
+    color: rgb(112, 112, 112);
+    font-size: 20px;
+    line-height: 1.4em;
+}
 
 .order_service {
     min-height: 600px;
@@ -13,9 +23,25 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    position: relative;
+}
+
+.order_service::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    visibility: hidden;
 }
 
 .order_service_content {
+    position: relative;
+    z-index: 2;
     width: 70%;
     display: flex;
     justify-content: flex-start;
@@ -75,6 +101,12 @@ body {
 
 .order_service_inner_button:active {
     transform: scale(0.96, 0.96);
+}
+
+@media (max-width: 900px) {
+    .order_service::before {
+        visibility: visible;
+    }
 }
 
 .about_company {
@@ -207,7 +239,7 @@ body {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    padding: 5px 0 5px 0;
+    padding: 0px 0px 4px 0px;
     background-color: rgb(238, 238, 238);
 }
 
@@ -216,14 +248,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}   
+    position: relative;
+}
+
+.call_details_column1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 2;
+    visibility: hidden;
+}
 
 .call_details_column1_inner {
     width: 90%;
     margin: 30px 0 30px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .call_details_title_bg {
+    width: 100%;
     display: flex;
     margin-bottom: 10px;
 }
@@ -280,29 +329,36 @@ body {
     background-position: 30% 50%;
 }
 
-.invisible {
-    overflow: hidden;
-    visibility: hidden;
-}
 
-/* .nigger_with_phone_img {
-    width: 100%;
-    height: 100%;
-    image-orientation: flip;
-} */
-
-@media (max-width: 1250px) {
+@media (max-width: 900px) {
     .call_details {
         flex-direction: column;
         justify-content: center;
+
     }
 
     .call_details_column1 {
         width: 100%;
+        background-image: url('nigger_with_phone.jpg');
+        background-size: cover;
+        background-position: 30% 50%;
+        height: 700px;
     }  
     
+    .call_details_column1::before {
+        visibility: visible;
+    }
+
     .call_details_title_bg {
         justify-content: center;
+    }
+
+    .call_details_title {
+        color: white;
+    }
+
+    .call_details_text {
+        color: white;
     }
 
     .call_details_button_bg {
@@ -310,7 +366,7 @@ body {
     }
 
     .call_details_column2 {
-        width: 100%;
+        display: none;
     }
 }
 
@@ -336,7 +392,7 @@ body {
     margin: 30px 0 30px 0;
 }
 
-.surveillance_options::before {
+.services_object::before {
     content: "";
     display: block;
     position: absolute;
@@ -349,9 +405,10 @@ body {
     visibility: hidden;
 }
 
+
 .surveillance_options_title_bg {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 0 15px 0;
 }
@@ -363,12 +420,18 @@ body {
 
 .surveillance_options_text_bg {
     width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .surveillance_options_text {
     color: rgb(255, 255, 255);
     font-size: 20px;
     line-height: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .surveillance_options_button_bg {
@@ -399,7 +462,6 @@ body {
     scale: 0.96 0.96;
 }
 
-
 @media (max-width: 900px) {
     .surveillance_options_content {
         justify-content: center;
@@ -409,16 +471,181 @@ body {
         justify-content: center;
     }
 
+    .surveillance_options_title {
+        justify-content: center;
+    }
+
     .surveillance_options_button_bg {
         justify-content: center;
     }
 
     .surveillance_options_text_bg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .surveillance_options_text {
         display: flex;
         justify-content: center;
     }
 
     .surveillance_options::before {
         visibility: visible;
+    }
+}
+
+.shadowing {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0 0 0;
+}
+
+.shadowing_content {
+    position: relative;
+    z-index: 2;
+    min-height: 600px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.shadowing_content .column1 {
+    width: 50%;
+    background-image: url('nigger_in_car3.jpg');
+    background-size: cover;
+}
+
+.shadowing_content .column2 {
+    width: 50%;
+    padding: 0 0 0 4px;
+}
+
+.shadowing .row1 {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadowing .row1_content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px 0 20px 0;
+}
+
+.shadowing .title_bg {
+    width: 100%;
+    display: flex;
+}
+
+.shadowing .title {
+    margin: 0 auto 15px 0;
+}
+
+.shadowing .text_bg {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.button2_bg {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 35px;
+    background-color: rgb(219, 171, 81);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: background-color 0.2s linear, scale 0.08s linear;
+}
+
+.button2:hover {
+    background-color: rgba(146, 95, 0, 0.6);
+}
+
+.button2:active {
+    scale: 0.96 0.96;
+}
+
+.shadowing .row2 {
+    height: 50%;
+    background-image: url('nigger_detective2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 50%;
+}
+
+@media (max-width: 1080px) {
+    .shadowing .row1 {
+        height: 60%;
+    }
+
+    .shadowing .row2 {
+        height: 40%;
+    }
+}
+
+@media (max-width: 900px) {
+    .shadowing {
+        height: 500px;
+        background-image: url('nigger_in_car3.jpg');
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 4px;
+    }
+
+    .services_object::before {
+        visibility: visible;
+    }
+
+    .shadowing .row2 {
+        display: none;
+    }
+
+    .shadowing_content .column1 {
+        display: none;
+    }
+
+    .shadowing_content .column2 {
+        width: 100%;
+
+    }
+
+    .shadowing .row1 {
+        height: 100%;
+    }
+
+    .shadowing .text {
+        color: white;
+    }
+
+    .shadowing .text_bg {
+        justify-content: center;
+    }
+
+    .shadowing .title_bg {
+        justify-content: center;
+    }
+
+    .shadowing .title {
+        color: white;
+        margin:  0 0 15px 0;
+    }
+
+    .shadowing .button2_bg {
+        justify-content: center;
     }
 }
