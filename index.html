@@ -9,7 +9,33 @@
     <link rel="stylesheet" href="Open_Sans.zip" type="text/css">
 </head>
 <body>
-
+    <div class="popup_form">
+        <div class="popup_form_body">
+            <button class="popup_form_close" href="#"></button>
+            <form class="popup_form_content">
+                <header class="popup_form_title">Отправить заявку</header>
+    
+                <label>
+                    <div>Ваше имя:</div>
+                    <input type="text" placeholder="Введите имя:">
+                </label>
+    
+                <label>
+                    <div>Ваша фамилия:</div>
+                    <input type="text" placeholder="Введите фамилию:">
+                </label>
+    
+                <label>
+                    <div>Ваш номер телефона.</div>
+                    <input type="text" placeholder="Введите ваш номер телефона:">
+                </label>
+    
+                <div class="send_application_button_bg">
+                    <button class="send_application_button">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <div class="order_service" id="order_service">
         <div class="order_service_content">
@@ -28,13 +54,12 @@
                     </span>
                 </div>
                 <div class="order_service_out_button">
-                        <a class="order_service_inner_button" href="#"><span>Заказать услугу</span></a>
+                        <a class="order_service_inner_button popup_form_open" href="#">Заказать услугу</a>
                 </div>
             </div>
         </div>
     </div>
-
-
+    
     <div class="about_company" id="about_company">
         <div class="about_company_content">
             <div class="header">
@@ -189,5 +214,6 @@
             </div>
         </div>
     </div>
+    <script src="private_detective.js"></script>
 </body>
 </html>
