@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="Open_Sans.zip" type="text/css">
 </head>
 <body>
-    <div class="popup_form">
+    <div class="popup_form" id="popup_form">
         <div class="popup_form_body">
             <button class="popup_form_close" href="#"></button>
             <form class="popup_form_content">
@@ -17,17 +17,17 @@
     
                 <label>
                     <div>Ваше имя:</div>
-                    <input type="text" placeholder="Введите имя:">
+                    <input type="text" placeholder="Введите имя">
                 </label>
     
                 <label>
                     <div>Ваша фамилия:</div>
-                    <input type="text" placeholder="Введите фамилию:">
+                    <input type="text" placeholder="Введите фамилию">
                 </label>
     
                 <label>
-                    <div>Ваш номер телефона.</div>
-                    <input type="text" placeholder="Введите ваш номер телефона:">
+                    <div>Ваш номер телефона:</div>
+                    <input type="text" placeholder="Введите ваш номер телефона">
                 </label>
     
                 <div class="send_application_button_bg">
@@ -54,7 +54,7 @@
                     </span>
                 </div>
                 <div class="order_service_out_button">
-                        <a class="order_service_inner_button popup_form_open" href="#">Заказать услугу</a>
+                        <a class="order_service_inner_button popup_form_open" href="#popup_form">Заказать услугу</a>
                 </div>
             </div>
         </div>
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                     <div class="surveillance_options_button_bg">
-                        <a class="surveillance_options_button" href="#">
+                        <a class="surveillance_options_button popup_form_open" href="#popup_form">
                             <span class="surveillance_options_button_inner">
                                 Подробнее
                             </span>
@@ -214,6 +214,7 @@
             </div>
         </div>
     </div>
-    <script src="private_detective.js"></script>
+    <script src="private_detective_popup1.js"></script>
+    <script src="private_detective_popup2.js"></script>
 </body>
 </html>
