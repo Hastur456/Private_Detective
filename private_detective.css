@@ -317,7 +317,7 @@ body.stop_scrolling {
 }
 
 .areas_of_work {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     background-color:rgb(238, 238, 238);
@@ -376,11 +376,11 @@ body.stop_scrolling {
 }
 
 .services {  
-    width: 100%; 
+    width: 100vw; 
     display: flex;
     justify-content: center;
     margin: 60px 0 60px 0;
-
+    padding: 0;
 }
 
 .services_content {
@@ -845,4 +845,3 @@ body.stop_scrolling {
     display: flex;
     justify-content: center;
 }
-
