@@ -1,3 +1,4 @@
+// popup
 const popupOpenButtons = document.querySelectorAll('.popup_form_open');
 const body = document.querySelector('body');
 
@@ -7,8 +8,8 @@ if (popupOpenButtons.length > 0) {
         popupOpenButton.addEventListener('click', (event) => {
             const popupName = popupOpenButton.getAttribute('href').replace('#', '');
             const curentPopup = document.getElementById(popupName);
-            popupOpen(curentPopup);
             addPadding();
+            popupOpen(curentPopup);
             bodyLock();
             event.preventDefault();
         });
@@ -20,6 +21,7 @@ function popupOpen(curentPopup) {
 };
 
 const popupCloseButtons = document.querySelectorAll('.popup_form_close');
+
 if (popupCloseButtons.length > 0) {
     for (let i = 0; i < popupCloseButtons.length; i++) {
         const popupCloseButton = popupCloseButtons[i];
@@ -55,12 +57,27 @@ function bodyLock() {
 };
 
 const wrapper = document.querySelector('.wrapper');
+const wrapperItems = wrapper.children;
+
+const orderService = wrapperItems[0];
+const orderServiceContent = document.querySelector('.order_service_content');
 
 function addPadding() {
     const scrollWidth =  window.innerWidth - document.documentElement.clientWidth + 'px';
-    wrapper.style.paddingRight = scrollWidth;
-}
+
+    for (let i = 0; i < wrapperItems.length; i++) {
+        const wrapperItem = wrapperItems[i];
+        wrapperItem.style.paddingRight = scrollWidth;
+    };
+};
 
 function deletePadding() {
-    wrapper.style.paddingRight = '0';
+    for (let i = 0; i < wrapperItems.length; i++) {
+        const wrapperItem = wrapperItems[i];
+        wrapperItem.style.paddingRight = '0';
+    };
 };
+
+// popup
+
+// swiper
