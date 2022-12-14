@@ -165,11 +165,8 @@ body.stop_scrolling {
     min-height: 600px;
     display: flex;
     justify-content: center;
-    background-image: url('intro_private_detective.jpg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
     position: relative;
+    width: 100vw;
 }
 
 .order_service::before {
@@ -186,17 +183,23 @@ body.stop_scrolling {
 }
 
 .order_service_content {
+    background-image: url('intro_private_detective.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     position: relative;
     z-index: 2;
-    width: 70%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+
 }
 
 .order_servise_content_inner {
-    width: 80%;
-    margin: 100px 0 60px 0;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
 }
 
@@ -211,6 +214,7 @@ body.stop_scrolling {
 
 .description_under_logo {
     margin-bottom: 15px;
+    width: 70%;
 }
 
 .content_description_under_logo {
@@ -218,6 +222,7 @@ body.stop_scrolling {
     font-size: 30px;
     font-weight: 100;
     line-height: 1.2em;
+
 }
 
 .order_service_out_button {
@@ -374,7 +379,7 @@ body.stop_scrolling {
     width: 100%; 
     display: flex;
     justify-content: center;
-    margin: 60px 0 0 0;
+    margin: 60px 0 60px 0;
 
 }
 
@@ -824,3 +829,20 @@ body.stop_scrolling {
         justify-content: center;
     }
 }
+
+.reviews {
+    margin: 0 0 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews_content {
+    width: 70%;
+}
+
+.reviews_title_bg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
