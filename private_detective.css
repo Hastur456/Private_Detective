@@ -25,7 +25,7 @@ body {
     align-items: center;
     background-color: rgb(0, 0, 0, 0.8);
     opacity: 0;
-    pointer-events: none;
+    visibility: hidden;
     transition: transform 0.8s ease-in-out;
 }
 
@@ -43,7 +43,7 @@ body {
     align-items: center;
     position: relative;
     transform: scale(0);
-    transition: transform 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 
 .popup_form.open .popup_form_body {
