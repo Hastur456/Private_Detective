@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Private Detective</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="private_detective.css">
     <link rel="stylesheet" href="Open_Sans.zip" type="text/css">
 </head>
 <body>
     <div class="popup_form" id="popup_form">
         <div class="popup_form_body">
-            <button class="popup_form_close" href="#"></button>
+            <button class="popup_form_close" href="popup_form"></button>
             <form class="popup_form_content">
                 <header class="popup_form_title">Отправить заявку</header>
     
@@ -38,9 +39,9 @@
     </div>
     
     <div class="wrapper">
-        <div class="order_service" id="order_service">
-            <div class="order_service_content">
-                <div class="order_servise_content_inner">
+        <section class="order_service" id="order_service">
+            <div class="order_service_content" >
+                <div class="order_service_content_inner" >
                     <div class="logo">
                         <span class="content_logo">
                             Частный детектив
@@ -55,13 +56,13 @@
                         </span>
                     </div>
                     <div class="order_service_out_button">
-                            <a class="order_service_inner_button popup_form_open" href="#popup_form">Заказать услугу</a>
+                        <a class="order_service_inner_button popup_form_open" href="#popup_form">Заказать услугу</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <div class="about_company" id="about_company">
+        <section class="about_company" id="about_company">
             <div class="about_company_content">
                 <div class="header">
                     <header class="header_inner">Частный детектив</header>
@@ -81,10 +82,10 @@
                     <div class="p">В идеале ваш тренировочный план должен включать в себя силовую нагрузку, аэробную нагрузку и растяжку/йогу. Растяжку достаточно выполнять 1 раз в неделю, остальные тренировки распределите в течение недели. Если вам не удается часто посещать групповые тренировки, то лучше взять на заметку смешанный тип тренировок, в которых предлагается разноплановая нагрузка для всего тела.</div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="areas_of_work" id="areas_of_work">
+        <section class="areas_of_work" id="areas_of_work">
             <div class="areas_of_work_content">
                 <div class="areas_of_work_bg_title">
                     <div class="areas_of_work_title">В каких направлениях я работаю</div>
@@ -126,9 +127,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="services">
+        <section class="services">
             <div class="services_content">
 
                 <div class="call_details">
@@ -151,7 +152,7 @@
                             </div>
         
                             <div class="call_details_button_bg">
-                                <a class="call_details_button popup_form_open" href="#popup_form">
+                                <a class="call_details_button popup_form_open">
                                     Подробнее
                                 </a>
                             </div>
@@ -214,24 +215,89 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="reviews">
+        <section class="reviews">
             <div class="reviews_content">
                 <div class="reviews_title_bg">
                     <div class="reviews_title title">
                         Отзывы заказчиков о моей работе
                     </div>
+                </div>
 
-                    <div class="swiper_reviews">
-                        <div class="swiper_reviews_content">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <div class="swiper_img_bg">
+                                    <img src="reviews_img1.jpg" alt="" class="swiper_img">
+                                </div>
+                                <div class="swiper_slide_inner_text">
+                                    <div class="title">
+                                        Дмитрий Новиков
+                                    </div>
+    
+                                    <div class="text">
+                                        Все что указано в договоре, 
+                                        было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. 
+                                        Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <div class="swiper_img_bg">
+                                    <img src="reviews_img2.jpg" alt="" class="swiper_img">
+                                </div>
+                                <div class="swiper_slide_inner_text">
+                                    <div class="title">
+                                        Александра Иванова
+                                    </div>
+                                    <div  class='text'>
+                                        Все что указано в договоре, было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. 
+                                        Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
+
                     </div>
+
+                    <div class="swiper-pagination"></div>
+                  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  
+            </div>
+        </section>
+
+        <section class="send_application">
+            <div class="send_application_content">
+                <header class="title">       
+                    Запишитесь и закажите мои услуги
+                </header>
+
+                <form class="form">  
+                    <label for="text">
+                        <input type="text" placeholder="Введите имя">
+                        <input type="text" placeholder="mail@mail.ru">
+                        <input type="text" placeholder="XXX-XXX-XXX">
+                        <button>Записаться</button>
+                    </label>
+                </form>
+
+                <div class="description">
+                    Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-    <script src="private_detective_popup2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="private_detective_popup2.js" type="text/javascript"></script>
+
+
 </body>
 </html>
